@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Stay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f12b; /* Change this to your desired background color */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; /* Added */
+            align-items: center; /* Added */
+        }
+        nav .brand {
+            padding: 10px 20px; /* Adjusted */
+        }
+        nav .search-form {
+            flex-grow: 1; /* Added */
+            margin: 0 20px; /* Adjusted */
+        }
+        nav .search-form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #9b9b9bd4;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 10px rgba(254, 254, 254, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .hotel-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        .hotel {
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #00000000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .hotel:hover {
+            transform: translateY(-5px);
+        }
+        .hotel h3 {
+            margin-top: 0;
+        }
+        .hotel p {
+            margin-bottom: 5px;
+        }
+        .hotel button {
+            background-color: #090909;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hotel button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            height: 5%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="brand">Dream Stay</h1>
+    </header>
+    <nav>
+        <h3 class="brand">Dream Stay</h3>
+        <form action="/home" method="post" class="search-form">
+            <input type="text" width="20%"     placeholder="Search...">
+        </form>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href= "index">Login</a>
+            <a href= "signup">SignUp</a>
+        </div>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Dream Stay</h2>
+        <p>Welcome to our hotel booking app, your one-stop destination for hassle-free hotel reservations. Whether you're planning a business trip, a romantic getaway, or a family vacation, our app is designed to simplify the process of finding and booking the perfect accommodations tailored to your needs.</p>
+        <div class="image-container">
+            <img src="sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="Home Image">
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>DreamStay is a leading online hotel booking company offering a wide range of services including hotel bookings, hotel reservations, holiday packages. With user-friendly interfaces and competitive prices, DreamStay simplifies travel planning for millions of customers, providing convenience and reliability in arranging their travel needs.</p>
+        <div class="image-container">
+            <img src="saad-khan-425b2PhNuHA-unsplash.jpg" alt="About Image">
+        </div>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Hotels offer essential services including accommodation, housekeeping, dining, meeting facilities, and Wi-Fi to enhance guest experience. Additionally, they provide amenities like parking, laundry, and security for comfort and safety during the stay.</p>
+        <div class="image-container">
+            <img src="visualsofdana-T5pL6ciEn-I-unsplash.jpg" alt="Service 1 Image">
+            <img src="reception-2507752_1280.jpg" alt="Service 2 Image">
+            <img src="hotel-1749602_1280.jpg" alt="Service 3 Image">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@DreamStay.com<br>
+        Phone: 123-456-7890</p>
+      </section>
+      <section id="hotels">
+          <h2>Hotels</h2>
+          <div class="checkin-checkout">
+              <input type="date" id="checkin" name="checkin">
+              <input type="date" id="checkout" name="checkout">
+          </div>
+          <div class="hotel-container">
+              <div class="hotel">
+                  <h3>Hotel A</h3>
+                  <p>Price: $100/night</p>
+                  <button>Book Now</button>
+              </div>
+              <div class="hotel">
+                  <h3>Hotel B</h3>
+                  <p>Price: $120/night</p>
+                  <button>Book Now</button>
+              </div>
+              <div class="hotel">
+                  <h3>Hotel C</h3>
+                  <p>Price: $80/night</p>
+                  <button>Book Now</button>
+              </div>
+          </div>
+      </section>
+      <footer>
+          <p>&copy; 2024 HOTEL Booking Company. All Rights Reserved.</p>
+      </footer>
+  </body>
+  </html>
